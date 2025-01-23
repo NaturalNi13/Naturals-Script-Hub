@@ -77,7 +77,7 @@ local dragArea = Instance.new("TextLabel")
 dragArea.Parent = mainFrame
 dragArea.Size = UDim2.new(1,0,0.1,0)
 dragArea.BorderSizePixel = 0
-dragArea.Text = "Nat's Hub"
+dragArea.Text = "Nat's Hub v1.2"
 dragArea.TextScaled = true
 dragArea.TextXAlignment = "Left"
 dragArea.BackgroundColor3 = Color3.fromRGB(60,60,60)
@@ -148,6 +148,7 @@ if verified then
     print("USER VERIFIED")
     keyLabel.Text = "WELCOME " .. player.Name .. "! LOADING HUB..."
     task.wait(1)
+    
     tabList.Visible = true
     seperator.Visible = true
     toolsList.Visible = true
@@ -156,7 +157,7 @@ if verified then
     -- Setup Tabs
     local tabs = {
 	    Universal = {"Universal", "rbxassetid://N/A", " 1", {"Dex V6", "loadstring(game:HttpGet('https://raw.githubusercontent.com/NaturalNi13/Essential-Scripts/refs/heads/main/InfDexMobile.lua'))()"}},
-	    TD13 = {"Sonic.exe TD 1.3", "rbxassetid://N/A", "2",  {"Custom Abilities", "loadstring(game:HttpGet('https://raw.githubusercontent.com/NaturalNi13/Custom-Abilities/refs/heads/main/customabilitie.lua'))()"}, {" ESP", "loadstring(game:HttpGet('https://raw.githubusercontent.com/NaturalNi13/Nats-Hub/refs/heads/main/td1.3esp.lua'))()"}},
+	    TD13 = {"Sonic.exe TD 1.3", "rbxassetid://N/A", "3",  {"Custom Abilities", "loadstring(game:HttpGet('https://raw.githubusercontent.com/NaturalNi13/Custom-Abilities/refs/heads/main/customabilitie.lua'))()"}, {"ESP", "loadstring(game:HttpGet('https://raw.githubusercontent.com/NaturalNi13/Nats-Hub/refs/heads/main/td1.3esp.lua'))()"}, {" Fake Ping FE", "loadstring(game:HttpGet('https://raw.githubusercontent.com/NaturalNi13/MainTDScripts/refs/heads/main/fakeping.lua'))()"}},
     Community = {"Community Scripts", "rbxassetid://N/A", "0"}
 }
     local allTabs = {}
@@ -209,7 +210,7 @@ end)
     end
     allTabs[1].Visible = true
     toggleButton.Activated:Connect(function()
-        mainFrame.Visible = not mainFrame.Visible
+        mainFrame.Visible = not mainframe.Visible
     end)
 else
     warn("User isn't white listed!")
