@@ -210,7 +210,7 @@ end)
     end
     allTabs[1].Visible = true
     toggleButton.Activated:Connect(function()
-        mainFrame.Visible = not mainframe.Visible
+        mainFrame.Visible = not mainFrame.Visible
     end)
 else
     warn("User isn't white listed!")
