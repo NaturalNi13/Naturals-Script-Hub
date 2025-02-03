@@ -2,7 +2,7 @@ local lighting = game:GetService("Lighting")
 
 for _, v in pairs(lighting:GetChildren()) do
     if v:IsA("PostEffect") then
-        v.Enabled = true
+        v.Enabled = false
     end
 end
 
@@ -10,7 +10,7 @@ end
 lighting.Technology = Enum.Technology.Future
 lighting.Ambient = Color3.fromRGB(150, 150, 150)
 lighting.OutdoorAmbient = Color3.fromRGB(120, 120, 120)
-lighting.Brightness = 3
+lighting.Brightness = 1
 lighting.GlobalShadows = true
 lighting.EnvironmentDiffuseScale = 1.5
 lighting.EnvironmentSpecularScale = 1.5
