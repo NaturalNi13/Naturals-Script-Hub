@@ -68,5 +68,9 @@ local function showCustomNotification(title, text, duration)
 end
 
 -- Example usage
+if game:GetService("Players").LocalPlayer.PlayerGui.vipConsole then
 showCustomNotification("Public Normal Sonic","Execute this script every time you get reset.", 8)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NaturalNi13/Naturals-Script-Hub/refs/heads/main/Protected_9652418577153302.lua.txt"))()
+else
+showCustomNotification("Nat's Custom Abilities REWORKED 1.32", "Normal Sonic Failed To Load: You are not in a TD 1.3 private server!", 8)
+end
