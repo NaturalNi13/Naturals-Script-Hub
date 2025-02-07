@@ -68,7 +68,7 @@ local function showCustomNotification(title, text, duration)
 end
 
 -- Example usage
-if game:GetService("Players").LocalPlayer.PlayerGui.vipConsole then
+if game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("vipConsole") then
 showCustomNotification("Public Normal Sonic","Execute this script every time you get reset.", 8)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/NaturalNi13/Naturals-Script-Hub/refs/heads/main/Protected_9652418577153302.lua.txt"))()
 else
